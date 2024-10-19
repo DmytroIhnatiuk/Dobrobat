@@ -58,28 +58,28 @@
 .box-shadow {
 	box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.location {
-	position: relative;
+// .location {
+// 	position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		bottom: var(--section-padding);
-		right: var(--container-gap);
-		left: auto;
-		background: url('@img/map.png') center center/cover no-repeat;
-		@media all and (min-width: 640px) {
-			width: 10.4rem;
-			top: var(--section-padding);
-		}
-	}
-	&::after {
-		content: '';
-		position: absolute;
-		top: -3rem;
-		left: -3rem;
-		width: 8rem;
-		height: 8rem;
-		background: url('@img/Ellipse.png') center center/cover no-repeat;
-	}
-}
+// 	&::before {
+// 		content: '';
+// 		position: absolute;
+// 		bottom: var(--section-padding);
+// 		right: var(--container-gap);
+// 		left: auto;
+// 		background: url('@img/map.png') center center/cover no-repeat;
+// 		@media all and (min-width: 640px) {
+// 			width: 10.4rem;
+// 			top: var(--section-padding);
+// 		}
+// 	}
+// 	&::after {
+// 		content: '';
+// 		position: absolute;
+// 		top: -3rem;
+// 		left: -3rem;
+// 		width: 8rem;
+// 		height: 8rem;
+// 		background: url('@img/Ellipse.png') center center/cover no-repeat;
+// 	}
+// }
