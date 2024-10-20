@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 // regex to find rems: (-?(\d+\.)?\d+)rem
 // regex to find gem usages with css vars: (--.+: *)(gem\((-?(\d+\.)?\d+)\))
@@ -8,15 +8,15 @@ $var-gem: #{var(#{$gem})};
 $gem-coeff: 100;
 
 @function gem($size) {
-  @return #{#{math.div($size, $gem-coeff)}rem};
+	@return #{#{math.div($size, $gem-coeff)}rem};
 }
 
 @function div($widthDesign) {
-  $value: calc(#{$gem-coeff * 100} / #{$widthDesign});
-  @return $value + vw;
+	$value: calc(#{$gem-coeff * 100} / #{$widthDesign});
+	@return $value + vw;
 }
 
 @function vwWidth($widthDesign) {
-  $value: #{math.div($gem-coeff * 100, $widthDesign)};
-  @return $value + vw;
+	$value: #{math.div($gem-coeff * 100, $widthDesign)};
+	@return $value + vw;
 }

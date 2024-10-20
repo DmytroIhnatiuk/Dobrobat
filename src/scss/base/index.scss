@@ -183,6 +183,9 @@ svg {
 		object-fit: cover;
 		transition: all 0.35s linear;
 	}
+	.odj-contain {
+		object-fit: contain;
+	}
 }
 
 a {

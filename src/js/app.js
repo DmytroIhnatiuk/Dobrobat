@@ -1,16 +1,17 @@
 window['FLS'] = true
 // Підключення основного файлу стилів
 import '../scss/style.scss'
-// import 'swiper/css'
-// import 'swiper/css/modules/effect-fade.css'
-// import 'swiper/css/navigation'
-// import 'swiper/css/pagination'
 import accordion from './modules/accordion.js'
 import * as flsFunctions from './core/functions.js'
 import { scrollToAnchor } from './modules/scrollToAnchor.js'
 import { headerFixed } from './modules/index.js'
 import burger from './modules/burger.js'
-// import {} from './modules/sliders.js'
+import Swiper from 'swiper'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { ukrainianBusinesses, results } from './modules/sliders.js'
 import HeaderComponent from './modules/HeaderComponent.js'
 
 /* Перевірка підтримки webp, додавання класу webp або no-webp для HTML */
@@ -37,7 +38,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	try {
 		HeaderComponent()
 		scrollToAnchor()
-		// response()
+		ukrainianBusinesses()
+		results()
 		headerFixed()
 		burger()
 	} catch (e) {
